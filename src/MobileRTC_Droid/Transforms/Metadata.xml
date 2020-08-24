@@ -93,4 +93,14 @@
     <attr path="/api/package[@name='com.zipow.videobox.view']/class[@name='MoreTip']/method[@name='onSelectMeetingReaction' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedName">OnSelectMeetingReaction2</attr>
     <attr path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='IMSessionSearchFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
     <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMSessionContentsFragment']/method[@name='onZoomFileClick' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]" name="managedName">OnZoomFileClick2</attr>
+
+
+  <attr  path="/api/package[@name='com.zipow.videobox.view.adapter']/class[@name='ZmDataRegionsAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='com.zipow.videobox.view.adapter.ZmDataRegionsAdapter.DataRegionViewHolder'] and parameter[2][@type='int']]" name="managedName">OnExBindViewHolder</attr>
+  <attr  path="/api/package[@name='com.zipow.videobox.view.adapter']/class[@name='ZmDataRegionsAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]" name="managedName">OnExCreateViewHolder</attr>
+
+  <attr  path="/api/package[@name='com.zipow.videobox.view.adapter']/class[@name='ZMPasswordRuleAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='com.zipow.videobox.view.adapter.ZMPasswordRuleAdapter.viewHolder'] and parameter[2][@type='int']]" name="managedName">OnExBindViewHolder</attr>
+  <attr  path="/api/package[@name='com.zipow.videobox.view.adapter']/class[@name='ZMPasswordRuleAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]" name="managedName">OnExCreateViewHolder</attr>
+
+  <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='SelectParticipantsAdapter']/method[@name='getView' and count(parameter)=3 and parameter[1][@type='int'] and parameter[2][@type='android.view.View'] and parameter[3][@type='android.view.ViewGroup']]"/>
+  <attr path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='MMContentSearchFilesAdapter']/method[@name='getItem' and count(parameter)=1 and parameter[1][@type='int']]" name="managedName">GetExItem</attr>
 </metadata>

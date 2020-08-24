@@ -29,13 +29,13 @@ namespace Com.Zipow.Videobox.View.MM
         }
     }
 
-    public partial class MMAddBuddySearchAdapter
-    {
-        public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
-        {
-            OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMAddBuddySearchAdapter.ViewHolder) holder, position);
-        }
-    }
+    //public partial class MMAddBuddySearchAdapter
+    //{
+    //    public override unsafe void OnBindViewHolder(global::AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
+    //    {
+    //        OnBindViewHolder((Com.Zipow.Videobox.View.MM.MMAddBuddySearchAdapter.ViewHolder) holder, position);
+    //    }
+    //}
 
     public partial class MMSessionMembersListAdapter
     {

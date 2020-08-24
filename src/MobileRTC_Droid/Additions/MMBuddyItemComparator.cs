@@ -1,4 +1,5 @@
 ﻿using System;
+using Android.Views;
 using Java.Interop;
 
 namespace Com.Zipow.Videobox.View.MM
@@ -86,6 +87,14 @@ namespace Com.Zipow.Videobox.View.MM
             {
                 return Compare((Com.Zipow.Videobox.View.MM.MMSlashCommandPopupView.SlashItem)lhs, (Com.Zipow.Videobox.View.MM.MMSlashCommandPopupView.SlashItem)rhs);
             }
+        }
+    }
+
+    public partial class MMContentSearchFilesAdapter : global::Android.Widget.BaseAdapter
+    {
+        public override Java.Lang.Object GetItem(int position)
+        {
+            return GetExItem(position);
         }
     }
 }
