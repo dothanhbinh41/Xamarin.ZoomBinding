@@ -5,7 +5,7 @@ using Java.Interop;
 
 namespace Com.Zipow.Videobox.View
 {
-	public partial class IMDirectoryAdapter
+	public partial class IMDirectoryAdapterX
 	{
 		//public override unsafe void OnBindViewHolder(AndroidX.RecyclerView.Widget.RecyclerView.ViewHolder holder, int position)
   //      {

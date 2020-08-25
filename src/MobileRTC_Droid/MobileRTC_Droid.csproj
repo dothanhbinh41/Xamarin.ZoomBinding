@@ -102,6 +102,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.MultiDex">
     </PackageReference>
+    <PackageReference Include="Google.Protobuf">
+      <Version>3.13.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
