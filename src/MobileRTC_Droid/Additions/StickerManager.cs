@@ -1,4 +1,6 @@
 using System;
+using Java.IO;
+
 namespace Com.Zipow.Videobox.View.MM.Sticker
 {
     public partial class StickerManager
@@ -12,3 +14,17 @@ namespace Com.Zipow.Videobox.View.MM.Sticker
         }
     }
 }
+
+//namespace US.Google.Protobuf
+//{
+//    public sealed partial class Descriptors
+//    {
+//        public sealed partial class FieldDescriptor : global::Java.Lang.Object, global::Java.Lang.IComparable
+//        {
+//            public int CompareTo(Java.Lang.Object o)
+//            {
+//                return CompareTo((FileDescriptor)o);
+//            }
+//        }
+//    }
+//}
