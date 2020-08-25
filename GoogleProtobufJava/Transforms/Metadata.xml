@@ -1,10 +1,501 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+
+  <remove-node
+     path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='clone' and count(parameter)=0]"/>
+  <attr
+   path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='byte[]']]"
+   name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+    path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='byte[]'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+    path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+      path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=4 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='com.google.protobuf.ExtensionRegistryLite']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+      path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.ByteString']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.ByteString'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+      path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.CodedInputStream']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+      path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.CodedInputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+     path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+      path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='java.io.InputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+    path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage.Builder']/method[@name='clear' and count(parameter)=0]"
+    name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+
+
+
+  <remove-node path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage.Builder']/method[@name='clone' and count(parameter)=0]"/>
+  <attr
+    path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.CodedInputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"
+    name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr
+    path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.Message']]"
+    name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr
+      path="/api/package[@name='com.google.protobuf']/class[@name='AbstractMessage.Builder']/method[@name='mergeUnknownFields' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.UnknownFieldSet']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='getDescriptorForType' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='build' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='clear' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='clone' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeDelimitedFrom' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]"/>
+
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeDelimitedFrom' and count(parameter)=2 and parameter[1][@type='java.io.InputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='byte[]']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='byte[]'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=4 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='com.google.protobuf.ExtensionRegistryLite']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.ByteString']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.ByteString'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.CodedInputStream']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.CodedInputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='java.io.InputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='MessageOrBuilder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message.Builder']/method[@name='buildPartial' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message']/method[@name='newBuilderForType' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.protobuf']/interface[@name='Message']/method[@name='toBuilder' and count(parameter)=0]"/>
+  <attr path="/api/package[@name='com.google.protobuf']/interface[@name='GeneratedMessage.BuilderParent']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessage.Builder']/method[@name='addRepeatedField' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor'] and parameter[2][@type='java.lang.Object']]" name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessage.Builder']/method[@name='clearField' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor']]" name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessage.Builder']/method[@name='setField' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor'] and parameter[2][@type='java.lang.Object']]" name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessage.Builder']/method[@name='setRepeatedField' and count(parameter)=3 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.Object']]" name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessage.Builder']/method[@name='setUnknownFields' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.UnknownFieldSet']]" name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='clear' and count(parameter)=0]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='clone' and count(parameter)=0]" name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='GeneratedMessage.Builder']/method[@name='clone' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='addRepeatedField' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor'] and parameter[2][@type='java.lang.Object']]"
+      name="return"
+        >Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='clearField' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor']]"
+      name="return"
+        >Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='newBuilderForField' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor']]"
+      name="return"
+        >Com.Google.Protobuf.IMessageBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='setField' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor'] and parameter[2][@type='java.lang.Object']]"
+      name="return"
+        >Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='setRepeatedField' and count(parameter)=3 and parameter[1][@type='com.google.protobuf.Descriptors.FieldDescriptor'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.Object']]"
+      name="return"
+        >Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='setUnknownFields' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.UnknownFieldSet']]"
+      name="return"
+        >Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='clone' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet']/method[@name='newBuilderForType' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return"
+        >Com.Google.Protobuf.IMessageLiteBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='build' and count(parameter)=0]"
+         name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+         name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='clear' and count(parameter)=0]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='clone' and count(parameter)=0]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='byte[]']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='byte[]'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=4 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='com.google.protobuf.ExtensionRegistryLite']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.ByteString']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.ByteString'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.CodedInputStream']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='com.google.protobuf.CodedInputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnknownFieldSet.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='java.io.InputStream'] and parameter[2][@type='com.google.protobuf.ExtensionRegistryLite']]"
+         name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+
+
+
+
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr> 
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.DescriptorProto.ExtensionRange.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumDescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueDescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.EnumValueOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+       name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileDescriptorSet.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FileOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MessageOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodDescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.MethodOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceDescriptorProto.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.ServiceOptions.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.SourceCodeInfo.Location.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart']/method[@name='toBuilder' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart']/method[@name='newBuilderForType' and count(parameter)=0]"
+     name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart']/method[@name='newBuilderForType' and count(parameter)=1 and parameter[1][@type='com.google.protobuf.GeneratedMessage.BuilderParent']]"
+      name="return">Com.Google.Protobuf.IMessageBuilder</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]"
+        name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart.Builder']/method[@name='build' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart.Builder']/method[@name='buildPartial' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLite</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto.Type']"
+        name="managedName">ExType</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.FieldDescriptorProto.Label']"
+        name="managedName">ExLabel</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DescriptorProtos.UninterpretedOption.NamePart']"
+        name="managedName">ExNamePart</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='UnmodifiableLazyStringList']/method[@name='get' and count(parameter)=1 and parameter[1][@type='int']]"
+         name="return">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='LazyStringArrayList']/method[@name='get' and count(parameter)=1 and parameter[1][@type='int']]"
+         name="return">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage']/method[@name='newBuilderForType' and count(parameter)=0]"
+   name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage']/method[@name='toBuilder' and count(parameter)=0]"
+    name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='com.google.protobuf']/class[@name='DynamicMessage.Builder']/method[@name='clone' and count(parameter)=0]"
+      name="return">Com.Google.Protobuf.IMessageLiteBuilder</attr>
 </metadata>

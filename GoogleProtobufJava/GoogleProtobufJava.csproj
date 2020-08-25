@@ -42,6 +42,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\Messages\AbstractMessage.cs" />
+    <Compile Include="Additions\Messages\ClassAdditions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
