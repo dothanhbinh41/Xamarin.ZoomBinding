@@ -1,29 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
-  <!-- <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='LazyStringArrayList']" />
-    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='UnmodifiableLazyStringList']" />
-    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite']" />
-    <remove-node path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite']" />-->
-  <!--   <remove-node path="/api/package[@name='com.zipow.videobox.confapp']/class[@name='ConfAppProtos']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='PTAppProtos']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='MeetingInfoProtos']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='ABContactsCache.LoadContactsTask']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='ContactPBXNumberAdapter']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.view']/class[@name='IMDirectoryAdapter']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='SettingAboutFragment']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='SipSwitchOutputAudioDialog']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.dialog']/class[@name='LiveStreamDialog']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.dialog']/class[@name='SwitchOutputAudioDialog']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.view.mm']/class[@name='PhoneLabelFragment']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='AddrBookItemDetailsFragment']" />
-    <remove-node path="/api/package[@name='com.zipow.videobox.fragment']/class[@name='AddrBookItemDetailsFragment']" />-->
+<metadata> 
   <attr path="/api/package[@name='com.zipow.videobox.ptapp.delegate']" name="managedName">Com.Zipow.Videobox.Ptapp.ZoomDelegate</attr>
   <attr path="/api/package[@name='com.zipow.videobox.sdk']/class[@name='SDKShareView']/method[@name='onLayout' and count(parameter)=5 and parameter[1][@type='boolean'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]" name="visibility">protected</attr>
   <attr path="/api/package[@name='com.zipow.videobox.view.sip']/class[@name='PhonePBXCallHistoryAdapter']/method[@name='removeCall' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="visibility">protected</attr>
@@ -118,11 +94,13 @@
   <attr path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='us.google.protobuf.CodedInputStream']]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
   <attr path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='us.google.protobuf.CodedInputStream'] and parameter[2][@type='us.google.protobuf.ExtensionRegistryLite']]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
   <attr path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
-  <attr path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='java.io.InputStream'] and parameter[2][@type='us.google.protobuf.ExtensionRegistryLite']]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
-  <attr path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessage.Builder']/method[@name='clear' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
-
+  <attr path="/api/package[@name='us.google.protobuf']/class[@name='AbstractMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='java.io.InputStream'] and parameter[2][@type='us.google.protobuf.ExtensionRegistryLite']]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr> 
   <attr path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='clear' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
-
+<attr path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLite</attr>
+  <attr path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='MessageType']]" name="return">>US.Google.Protobuf.IMessageLiteBuilder</attr>
+  <attr path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='MessageType']]/parameter[@name='p0']" name="type">US.Google.Protobuf.IMessageLite</attr>
+    <attr path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='clone' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
+  
   <attr path="/api/package[@name='us.google.protobuf']/class[@name='UnmodifiableLazyStringList']/method[@name='get' and count(parameter)=1 and parameter[1][@type='int']]" name="return">Java.Lang.Object</attr>
   <attr path="/api/package[@name='us.google.protobuf']/class[@name='LazyStringArrayList']/method[@name='get' and count(parameter)=1 and parameter[1][@type='int']]" name="return">Java.Lang.Object</attr>
 
@@ -1560,7 +1538,9 @@
 <attr path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='IMProtos.zGroupProperty.Builder']/method[@name='mergeFrom' and count(parameter)=2 and parameter[1][@type='us.google.protobuf.CodedInputStream'] and parameter[2][@type='us.google.protobuf.ExtensionRegistryLite']]/parameter[@name='other']" name="type">Java.Lang.Object</attr>
 <attr path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='IMProtos.zGroupProperty.Builder']/method[@name='mergeFrom' and count(parameter)=1 and parameter[1][@type='com.zipow.videobox.ptapp.IMProtos.zGroupProperty']]" name="return">US.Google.Protobuf.IMessageLiteBuilder</attr>
 
-  <attr path="/api/package[@name='us.google.protobuf']/class[@name='GeneratedMessageLite.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLite</attr>
+  
   <attr path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='IMProtos.zGroupProperty']/method[@name='getDefaultInstanceForType' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLite</attr>
   <attr path="/api/package[@name='com.zipow.videobox.ptapp']/class[@name='IMProtos.zGroupProperty.Builder']/method[@name='getDefaultInstanceForType' and count(parameter)=0]" name="return">US.Google.Protobuf.IMessageLite</attr>
+
+  
 </metadata>
